@@ -38,11 +38,13 @@ const Info = styled.div`
 const Title = styled.h1`
     color: white;
     margin: 20px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
 `;
 const Button = styled.button`
     border: none;
     padding: 10px;
     background-color: white;
+    font-size: 16px;
     color:grey;
     cursor: pointer;
     font-weight: 600;
