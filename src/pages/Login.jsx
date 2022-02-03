@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 const Login = () => {
     return (
@@ -39,6 +40,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    ${mobile({ width:"80%"})}
 `;
 
 const Form = styled.form`
