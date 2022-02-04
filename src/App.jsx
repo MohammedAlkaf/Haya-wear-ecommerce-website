@@ -4,15 +4,38 @@ import Login from "./pages/Login";
 import Product from "./pages/Product";
 import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
+import ScrollToTop from "./components/ScrollToTop";
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 const App = () => {
   return (
-      // <Home/>
-      // <ProductList/>
-      // <Product/>
-      // <Register/>
-      // <Login/>
-      <Cart/>
+    <Router>
+      <ScrollToTop />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/products">
+          <ProductList />
+        </Route>
+        <Route path="/product/:product_id">
+          <Product />
+        </Route>
+        <Route path="/cart">
+          <Cart />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/register">
+          <Register />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

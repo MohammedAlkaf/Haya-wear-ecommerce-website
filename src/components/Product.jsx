@@ -1,17 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons';
+import { useHistory } from 'react-router';
 
 const Product = ({item}) => {
+
+    const history = useHistory();
+
     return (
         <Container>
             <Circule/>
             <Image src = { item.img }/>
             <Info>
-                <Icon bg = {"#e0c4ff"}>
+                <Icon bg = {"#e0c4ff"} onClick={()=> history.push('/cart')}>
                     <ShoppingCartOutlined/>
                 </Icon>
-                <Icon bg = {'#b6dcff'}>
+                <Icon bg = {'#b6dcff'} onClick={()=> history.push(`product/${item.id}`)}>
                     <SearchOutlined/>
                 </Icon>
                 <Icon bg = {"#ffb6a6"}>

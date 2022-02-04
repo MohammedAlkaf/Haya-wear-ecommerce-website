@@ -1,4 +1,3 @@
-import React from 'react';
 import Anouncement from '../components/Anouncement';
 import Categories from '../components/Categories';
 import Footer from '../components/Footer';
@@ -8,6 +7,7 @@ import Products from '../components/Products';
 import Slider from '../components/Slider';
 
 const Home = () => {
+
     return (
         <div>
             <Anouncement/>

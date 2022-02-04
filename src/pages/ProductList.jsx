@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import Anouncement from '../components/Anouncement';
 import Footer from '../components/Footer';
@@ -8,6 +7,7 @@ import Products from '../components/Products';
 import { mobile } from '../responsive';
 
 const ProductList = () => {
+
     return(
         <Contaier>
             <Navbar/>

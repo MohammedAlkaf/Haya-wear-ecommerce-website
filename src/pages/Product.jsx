@@ -1,13 +1,18 @@
 import { Add, Remove } from '@material-ui/icons';
-import React from 'react';
 import styled from 'styled-components';
 import Anouncement from '../components/Anouncement';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Newsletter from '../components/Newsletter';
 import { mobile } from '../responsive';
+import { useParams } from "react-router";
+import { popularProducts } from '../data';
 
 const Product = () => {
+
+    const { product_id } = useParams();
+    const item = popularProducts.find( ({ id }) => id === Number(product_id) );
+
     return (
         <Container>
             <Navbar/>
@@ -15,7 +20,7 @@ const Product = () => {
 
             <Wrapper>
                 <ImageContainer>
-                    <Image src = {'https://static.wearpact.com/img/product/women/wca-chh-1-1636667863.jpg'}/>
+                    <Image src = {item.img}/>
                 </ImageContainer>
                 <InfoContainer>
                     <Title>Lorem Ipsum</Title>

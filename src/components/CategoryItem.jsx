@@ -1,14 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { mobile } from '../responsive';
+import { useHistory } from 'react-router-dom';
 
 const CategoryItem = ({item}) => {
+    const history = useHistory();
+
     return (
         <Container>
             <Image src = {item.img}/>
             <Info>
                 <Title>{item.title}</Title>
-                <Button>SHOP NOW</Button>
+                <Button onClick={()=> history.push('/products')}>SHOP NOW</Button>
             </Info>
         </Container>
     );

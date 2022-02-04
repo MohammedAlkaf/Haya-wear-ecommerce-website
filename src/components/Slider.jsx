@@ -3,9 +3,12 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { sliderItems } from '../data';
 import { mobile } from '../responsive';
+import { useHistory } from 'react-router-dom';
 
 const Slider = () => {
     const [ slideIndex, setSlideIndex ] = useState(0);
+    const history = useHistory();
+
     const handleClick = (direction) => {
         if( direction === 'left'){
             setSlideIndex( slideIndex > 0 ? slideIndex - 1 : sliderItems.length - 1)
@@ -30,7 +33,7 @@ const Slider = () => {
                                 <InfoContainer>
                                     <Title>{item.title}</Title>
                                     <Desc>{item.desc}</Desc>
-                                    <Button>SHOP NOW</Button>
+                                    <Button onClick={()=> history.push('/products')}>SHOP NOW</Button>
                                 </InfoContainer>
                             </Slide>
                         )
@@ -100,7 +103,7 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-    height: 80%;
+    height: 100%;
     width: 100%;
     object-fit:cover;
 `;
@@ -123,6 +126,7 @@ const Desc = styled.p`
 const Button = styled.button`
     padding: 10px;
     font-size: 20px;
+    cursor: pointer;
     background-color: transparent;
 `;
 

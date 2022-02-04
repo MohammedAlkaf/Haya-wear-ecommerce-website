@@ -4,8 +4,12 @@ import { Search } from '@material-ui/icons';
 import Badge from '@material-ui/core/Badge';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import { mobile } from '../responsive';
+import { useHistory } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const history = useHistory();
+
     return (
         <Container>
             <Wrapper>
@@ -17,13 +21,13 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>HAYA.</Logo>
+                    <Logo onClick={() => history.push('/')} >HAYA.</Logo>
                 </Center>
                 <Right>
-                    <MenuItem>REGISTER</MenuItem>
-                    <MenuItem>SIGN IN</MenuItem>
-                    <MenuItem>
-                        <Badge badgeContent={4} color="primary">
+                    <MenuItem onClick={() => history.push('/register')}>REGISTER</MenuItem>
+                    <MenuItem onClick={() => history.push('/login')}>SIGN IN</MenuItem>
+                    <MenuItem onClick={() => history.push('/cart')} >
+                        <Badge badgeContent={2} color="primary">
                             <ShoppingCartOutlinedIcon/>
                         </Badge>
                     </MenuItem>
@@ -89,6 +93,7 @@ const Input = styled.input`
 const Logo = styled.h1`
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
     ${mobile({ fontSize:"24px"})}
 `;
 
