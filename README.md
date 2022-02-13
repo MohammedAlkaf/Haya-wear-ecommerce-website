@@ -1,70 +1,12 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## DEMO
+Link: https://hayawear.netlify.app/
+## IMAGES
+![iphone-7-minimal-mockup-free-preview-1](https://user-images.githubusercontent.com/77555217/153738732-4097437c-fe66-46a1-a18f-c81bec46b9a7.png)
+![Home1](https://user-images.githubusercontent.com/77555217/153738735-5e5ddfbe-74a9-4dee-b39c-a50af8b6bfb4.JPG)
+![Home2](https://user-images.githubusercontent.com/77555217/153738736-c47c77a5-3b21-42d0-89dc-f3bbb355d63f.JPG)
+![Home3](https://user-images.githubusercontent.com/77555217/153738739-14b1e9b6-d1e1-4693-bc10-afb67d0755b5.JPG)
+![Register](https://user-images.githubusercontent.com/77555217/153738742-db4de5b3-391b-436c-b312-4768f5ec6add.JPG)
+![Login](https://user-images.githubusercontent.com/77555217/153738745-1027ec10-4a11-41b2-ac06-0af707aca232.JPG)
+![List](https://user-images.githubusercontent.com/77555217/153738747-93d30be3-bf00-4be6-bfc0-483b9cdf0748.JPG)
+![Prodcut](https://user-images.githubusercontent.com/77555217/153738749-8d5d9a2b-e37a-4076-a4df-8900f2a3e2b9.JPG)
+![Cart](https://user-images.githubusercontent.com/77555217/153738755-e4def3f8-b74b-4a15-a7cd-d841e752bc94.JPG)
